@@ -59,8 +59,8 @@
 
   		<!-- This starts row 2 - We will have two columns here, one for the gifs to be displayed in and one for the form input -->
   		<div class="row">
-    		<!-- This starts the first column it stretches across 4 columns with an offset of 1 column to provide spacing on the sides and I will leave -->
-    		<div class="col-lg-4 col-lg-offset-1">
+    		<!-- This starts the first column it stretches across 5 columns with an offset of 1 column to provide spacing on the sides and I will leave -->
+    		<div class="col-lg-5 col-lg-offset-1">
     		<div class="panel panel-default">
   				<div class="panel-body">
   					<!-- This is the div we will select to append the buttons to -->
@@ -73,13 +73,19 @@
   				</div>
   			<!-- End the first column -->
   			</div>
-  			<!-- This starts the second column it stretches across 4 columns with an offset of 1 column to provide spacing on the sides and I will leave -->
-  			<div class="col-lg-4 col-lg-offset-1">
+  			<!-- This starts the second column it stretches across 5 columns with no offset -->
+  			<div class="col-lg-5">
     		<div class="panel panel-default">
   				<div class="panel-body">
   					<!-- This is the div we will select to append the buttons to -->
-  					<div id = "topic-form">
-						Form Goes Here
+  					<div>
+						 <form id="topic-form">
+					      <label for="topic-input">Add a New Topic</label>
+					      <input type="text" id="topic-input"><br>
+
+					      <!-- Button triggers new movie to be added -->
+					      <input id="add-topic" type="submit" value="Add a New Topic">
+					    </form>
 					<!-- This will end the topic button div-->
   					</div>
   				<!-- End the panels-->
