@@ -57,10 +57,34 @@
   		<!-- End the first row -->
   		</div>
 
-  		<!-- This starts row 2 - We will have two columns here, one for the gifs to be displayed in and one for the form input -->
+		<!-- This starts row 2 - The buttons go all the way across here -->
+    	<div class="row">
+    		<!-- This starts the column it stretches across 10 columns with an offset of 1 column to provide spacing on the sides -->
+    		<div class="col-lg-10 col-lg-offset-1">
+            	<div class="panel panel-default">
+  				<div class="panel-body">
+  					<!-- This is the div we will select to append the buttons to -->
+  					<div>
+						 <form id="topic-form">
+					      <label for="topic-input">Add a New Topic</label>
+					      <input type="text" id="topic-input">
+					      <!-- Button triggers new topic to be added -->
+					      <input id="add-topic" type="submit" value="Add a New Topic">
+					    </form>
+					<!-- This will end the topic button div-->
+  					</div>
+  				<!-- End the panels-->
+  				</div>
+  				</div>
+  			<!-- End the column -->
+  			</div>
+  		<!-- End the second row -->
+  		</div>
+
+  		<!-- This starts row 3 - We will have one column here, one for the gifs to be displayed in -->
   		<div class="row">
-    		<!-- This starts the first column it stretches across 5 columns with an offset of 1 column to provide spacing on the sides and I will leave -->
-    		<div class="col-lg-5 col-lg-offset-1">
+    		<!-- This starts the column it will stretch 10 columns with an offset of 1 -->
+    		<div class="col-lg-10 col-lg-offset-1">
     		<div class="panel panel-default">
   				<div class="panel-body">
   					<!-- This is the div we will select to append the buttons to -->
@@ -71,32 +95,11 @@
   				<!-- End the panels-->
   				</div>
   				</div>
-  			<!-- End the first column -->
+  			<!-- End the column -->
   			</div>
-  			<!-- This starts the second column it stretches across 5 columns with no offset -->
-  			<div class="col-lg-5">
-    		<div class="panel panel-default">
-  				<div class="panel-body">
-  					<!-- This is the div we will select to append the buttons to -->
-  					<div>
-						 <form id="topic-form">
-					      <label for="topic-input">Add a New Topic</label>
-					      <input type="text" id="topic-input"><br>
+		<!-- End the Third Row -->
+  		</div>
 
-					      <!-- Button triggers new movie to be added -->
-					      <input id="add-topic" type="submit" value="Add a New Topic">
-					    </form>
-					<!-- This will end the topic button div-->
-  					</div>
-  				<!-- End the panels-->
-  				</div>
-  				</div>
-  			<!-- End the second column -->
-  			</div>
-			<!-- End the second row -->
-  		</div>
-  		<!-- End the row -->
-  		</div>
 
 	<!-- This ends the main container -->
 	</div>
