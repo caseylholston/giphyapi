@@ -1,0 +1,77 @@
+.jumbotron {
+	background-image: url("../images/nyc_skyline.png");
+	background-size:100%;
+	font-family: 'Harmattan', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: #b51a1c;
+}
+
+.container {
+	background-image: url("../images/stardust.png");
+	background-size:cover;
+}
+
+body {
+	margin:0px;
+	font-family: 'Harmattan', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: #b51a1c;
+}
+
+.panel {
+	background: none;
+	border: none;
+}
+
+.topic {
+	margin: 5px;
+	background-color:white;
+	border-radius: 12px;
+	border-color: #b51a1c;
+}
+
+#add-topic {
+	font-family: 'Harmattan', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background-color:white;
+	border-radius: 12px;
+	border-color: #b51a1c;
+}
+
+#topic-form {
+	font-family: 'Harmattan', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	color: #b51a1c;
+	font-size: 20px;
+}
+
+#topics-gifs {
+	text-align: center;
+}
+
+p {
+	font-family: 'Harmattan', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: #b51a1c;
+	font-size:16px;
+}
+
+
+
+
+
+
+
+
+

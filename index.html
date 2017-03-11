@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8"></meta>
-	<title>Get Your GIF On!</title>
+	<title>Mad About GIFs!</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -21,17 +21,18 @@
 	<!-- Javascript File -->
 	<script src="assets/javascript/app.js"></script>
 
+	<!-- Loading Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Harmattan|Montserrat|Raleway|Roboto:100,400" rel="stylesheet">
+
 </head>
 <body>
 
 	<!-- Hero Area -->
 	<div class="jumbotron">
-	    <h1 class="text-center">Get Your GIF On!</h1>
-	    <h3 class="text-center">"You miss 100% of the shots you don't take" ~ Wayne Gretzky</h3>
+	    <h1 class="text-center">Mad About GIFs!</h1>
 		<div class="text-center">
-	        <p>You will have 20 seconds to answer each question.<p>
-	        <div id = scoreKeeper>
-	        </div>
+	        <iframe src="https://player.vimeo.com/video/9089194" width="320" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p><a href="https://vimeo.com/9089194">Mad Men Main Title</a> from <a href="https://vimeo.com/jeremycox">Jeremy Cox</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 	    </div>
     </div>
 	<!-- End Hero Area -->
@@ -66,7 +67,7 @@
   					<!-- This is the div we will select to append the buttons to -->
   					<div>
 						 <form id="topic-form">
-					      <label for="topic-input">Add a New Topic</label>
+					      <label for="topic-input">Add a New Character</label>
 					      <input type="text" id="topic-input">
 					      <!-- Button triggers new topic to be added -->
 					      <input id="add-topic" type="submit" value="Add a New Topic">
@@ -89,7 +90,6 @@
   				<div class="panel-body">
   					<!-- This is the div we will select to append the buttons to -->
   					<div id = "topic-gifs">
-					GIFs go here
 					<!-- This will end the topic button div-->
   					</div>
   				<!-- End the panels-->

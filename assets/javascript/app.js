@@ -2,11 +2,13 @@
 $(document).ready(function(){
 
 //Initial Array of Topics
-var topics = ['The Matrix', 'The Notebook', 'Brave', 'Frozen'];
+var topics = ['Peggy Olson', 'Don Draper', 'Pete Campbell', 'Betty Draper', 'Roger Sterling', 
+			  'Joan Harris','Ken Cosgrove', 'Sally Draper', 'Megan Draper'];
 
 //Display Topics renders the HTML to display all topics
 function displayTopics() {
-	
+	$('#topic-gifs').empty();
+
 	var topic = $(this).attr('data-name');
 
 	var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + topic + '&limit=10&rating=&api_key=dc6zaTOxFJmzC';
@@ -28,7 +30,7 @@ function displayTopics() {
           var gifImage = response.data[gifIndex].images.fixed_height.url;
           console.log([gifIndex]+stillImage);
 
-          // Creating an element to hold the Still Image
+          // Creating an element to hold the Still Image and Attributes
           var pStillImage = $('<img src = "'+stillImage+'"class ="gif">');
           	  pStillImage.attr("data-still",stillImage);
           	  pStillImage.attr("data-animate",gifImage);
@@ -77,7 +79,7 @@ function displayTopics() {
           
           var a = $('<button>');
           // Adding a class of topic to our button
-          a.addClass('topic');
+          a.addClass('topic','mdl-button mdl-js-button mdl-button--raised mdl-button--colored');
           // Adding a data-attribute
           a.attr('data-name', topics[i]);
           // Providing the initial button text
@@ -117,6 +119,7 @@ function displayTopics() {
 	        $(this).attr("src", $(this).attr("data-still"));
 	        $(this).attr("data-state", "still");
       	}
+      //End the animate play function
       };
 
       // Adding a click event listener to all elements with a class of "topic"
