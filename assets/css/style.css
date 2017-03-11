@@ -1,6 +1,7 @@
 .jumbotron {
 	background-image: url("../images/nyc_skyline.png");
 	background-size:100%;
+	background-repeat: no-repeat;
 	font-family: 'Harmattan', sans-serif;
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Raleway', sans-serif;
