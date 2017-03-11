@@ -25,10 +25,14 @@ function displayTopics() {
 
           // Storing the Still Image
           var stillImage = response.data[gifIndex].images.fixed_height_still.url;
+          var gifImage = response.data[gifIndex].images.fixed_height.url;
           console.log([gifIndex]+stillImage);
 
           // Creating an element to hold the Still Image
-          var pStillImage = $('<img src = "'+stillImage+'" class ="gif-'+[gifIndex]+'">');
+          var pStillImage = $('<img src = "'+stillImage+'"class ="gif">');
+          	  pStillImage.attr("data-still",stillImage);
+          	  pStillImage.attr("data-animate",gifImage);
+          	  pStillImage.attr("data-state","still");
 
           // Displaying the Still Image
           topicDiv.append(pStillImage);
@@ -98,18 +102,26 @@ function displayTopics() {
       });
 
       // This function handles events where a still image is clicked
-      $('#gif').on('click', function() {
+      function animatePlay() {
         console.log("The gif is clicked");
-        // This line grabs the input from the textbox
-        //var topic = $('#topic-input').val().trim();
-
-        // Adding topic from the textbox to our array
-        //topics.push(topic);
-
-      });
+        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+      	var state = $(this).attr("data-state");
+      	// If the clicked image's state is still, update its src attribute to what its data-animate value is.
+      	// Then, set the image's data-state to animate
+      	// Else set src to the data-still value
+	      	if (state === "still") {
+	        $(this).attr("src", $(this).attr("data-animate"));
+	        $(this).attr("data-state", "animate");
+      	} 
+	      	else {
+	        $(this).attr("src", $(this).attr("data-still"));
+	        $(this).attr("data-state", "still");
+      	}
+      };
 
       // Adding a click event listener to all elements with a class of "topic"
       $(document).on('click', '.topic', displayTopics);
+      $(document).on('click', '.gif', animatePlay);
 
 
       // Calling the renderButtons function to display the intial buttons
